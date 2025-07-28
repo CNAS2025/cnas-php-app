@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: cnas-php-app-service
+  name: php-service
 spec:
   selector:
-    app: cnas-php-app
+    app: php
   ports:
     - protocol: TCP
       port: 80
