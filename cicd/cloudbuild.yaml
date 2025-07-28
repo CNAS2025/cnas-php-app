@@ -14,3 +14,5 @@ steps:
   env:
     - 'CLOUDSDK_COMPUTE_ZONE=asia-southeast1-a'
     - 'CLOUDSDK_CONTAINER_CLUSTER=cna-cluster'
+options:
+  logging: CLOUD_LOGGING_ONLY
