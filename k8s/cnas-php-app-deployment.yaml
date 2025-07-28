@@ -6,11 +6,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: cnas-php-app
+      app: php
   template:
     metadata:
       labels:
-        app: cnas-php-app
+        app: php
     spec:
       containers:
       - name: php
@@ -19,13 +19,18 @@ spec:
         - containerPort: 80
         env:
         - name: DB_HOST
-          value: mysql
+          value: "mysql"
         - name: DB_USER
-          value: root
+          value: "root"
         - name: DB_PASSWORD
           valueFrom:
             secretKeyRef:
               name: mysql-secret
               key: password
         - name: DB_NAME
-          value: mydb
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: database
+        - name: DB_PORT
+          value: "3306"
