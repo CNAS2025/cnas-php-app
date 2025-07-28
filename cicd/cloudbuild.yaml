@@ -12,7 +12,7 @@ steps:
     - 'deployment/cnas-php-app'
     - 'php=asia-southeast1-docker.pkg.dev/cnas-assignment-467305/php-repo/cnas-php-app:$SHORT_SHA'
   env:
-    - 'CLOUDSDK_COMPUTE_ZONE=asia-southeast1-a'
+    - 'CLOUDSDK_COMPUTE_REGION=asia-southeast1'
     - 'CLOUDSDK_CONTAINER_CLUSTER=cnas-cluster'
 options:
   logging: CLOUD_LOGGING_ONLY
