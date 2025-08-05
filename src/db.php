@@ -1,7 +1,7 @@
 <?php
 $host = getenv("DB_HOST") ?: "mysql";
 $user = getenv("DB_USER") ?: "root";
-$pass = getenv("DB_PASSWORD") ?: "rootpass";
+$pass = getenv("DB_PASSWORD") ?: "password";
 $db   = getenv("DB_NAME") ?: "mydb";
 $port = getenv("DB_PORT") ?: 3306;
 $conn = new mysqli($host, $user, $pass, $db, $port);
