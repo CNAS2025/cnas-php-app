@@ -36,5 +36,5 @@ steps:
       - 'php=asia-southeast1-docker.pkg.dev/cnas-assignment-467305/php-repo/cnas-php-app:$SHORT_SHA'
     env:
       - 'CLOUDSDK_COMPUTE_REGION=asia-southeast1'
-      - 'CLOUDSDK_CONTAINER_CLUSTER=cnas-clust'
+      - 'CLOUDSDK_CONTAINER_CLUSTER=cnas-cluster'
 
