@@ -38,3 +38,6 @@ spec:
         - name: initdb
           configMap:
             name: mysql-initdb-config2
+        - name: createuser
+          configMap:
+            name: mysql-createuser-config
