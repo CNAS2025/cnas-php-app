@@ -40,4 +40,4 @@ spec:
             name: mysql-initdb-config2
         - name: createuser
           configMap:
-            name: mysql-createuser-config
+            name: mysql-initdb-config
