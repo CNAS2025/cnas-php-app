@@ -1,3 +1,0 @@
-CREATE USER 'prometheus'@'%' IDENTIFIED BY 'password';
-GRANT SELECT, PROCESS, SHOW DATABASES, SHOW VIEW ON *.* TO 'prometheus'@'%';
-FLUSH PRIVILEGES;

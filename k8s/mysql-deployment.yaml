@@ -34,12 +34,7 @@ spec:
           volumeMounts:
             - name: initdb
               mountPath: /docker-entrypoint-initdb.d
-            - name: createuser
-              mountPath: /docker-entrypoint-createuser.d
       volumes:
         - name: initdb
           configMap:
             name: mysql-initdb-config2
-        - name: createuser
-          configMap:
-            name: mysql-initdb-config
