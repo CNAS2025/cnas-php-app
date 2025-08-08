@@ -34,6 +34,8 @@ spec:
           volumeMounts:
             - name: initdb
               mountPath: /docker-entrypoint-initdb.d
+            - name: createuser
+              mountPath: /docker-entrypoint-createuser.d
       volumes:
         - name: initdb
           configMap:
